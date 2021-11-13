@@ -30,8 +30,8 @@
                 <td><?php echo $row['address']; ?></td>
                 <td><?php echo $row['phone']; ?></td>
                 <td>
-                    <a href="" class="tbody-update">Update</a>
-                    <a href="" class=tbody-delete>Delete</a>
+                    <a href="edit.php?id=<?php echo $row['pid']; ?>" class="tbody-update">Edit</a>
+                    <a href="delete.php?id=<?php echo $row['pid']; ?>" class=tbody-delete>Delete</a>
                 </td>
             </tbody>
 
