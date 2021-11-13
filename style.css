@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #FDEEEE;
+    font-family: Ubuntu;
+    list-style: none;
+    text-align: center;
+    text-decoration: none;
+}
+
+.head-title{
+    margin: 2rem 0;
+    color: #EE6666;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #A1F6BA;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.menu-title{
+    background-color: #A1F6BA;
+}
+
+.menu-title a{
+    background-color: #A1F6BA;
+    color: #5C5050;
+    font-size: 18px;
+    padding: 1rem;
+    border-radius: 10px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.menu-title a:hover{
+    background-color: #3d8653;
+    color: #d3b9b9;
+    transition: .5s;
+}
+
+.subtitle{
+    padding: 1.5rem 0;
+}
+
+.donor-list{
+    display: flex;
+    justify-content: space-around;
+}
+
+.donor-list table{
+    width: 60%;
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: rgb(226, 226, 226);
+    border-radius: 5px;
+}
+
+.donor-list table thead th{
+    padding: 12px;
+    background-color: #aaaaaa;
+}
+
+.donor-list table tbody td{
+    padding: 10px 0;
+}
+
+.tbody-update{
+    padding: 5px;
+    background-color: rgb(73, 128, 48);
+    color: #fff;
+    border-radius: 5px;
+}
+
+.tbody-delete{
+    padding: 5px;
+    background-color: #7a2626;
+    color: #fff;
+    border-radius: 5px;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    right: 0;
+    font-size: 18px;
+    color: #363030;
+    padding: 5px;
+}
+
+/*Add Donor*/
+
+.add-donor{
+    background-color: #dfdfdf;
+    width: 40%;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.add-donor div{
+    padding: 1rem .5rem;
+    background-color: #dfdfdf;
+}
+
+.add-donor .form-group label{
+    width: 28%;
+    display: inline-block;
+    text-align: left;
+    font-size: 18px;
+    background-color: #dfdfdf;
+}
+
+.add-donor .form-group  input, select, option{
+    width: 70%;
+    border: 1px solid black;
+    padding: 8px 5px;
+    margin: 0;
+    text-align: left;
+    font-size: 18px;
+    border-radius: 2px;
+}
+
+.submit{
+    /* margin: 10px 0; */
+    border: 1px solid black;
+    padding: 6px 40px;
+    border-radius: 5px;
+    background-color: black;
+    color: #fff;
+    font-size: 18px;
+}
+
+/*Update Donor*/
+
+.donorID{
+    background-color: #dfdfdf;
+    width: 40%;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.donorID .form-group{
+    padding: 1rem .5rem;
+    background-color: #dfdfdf;
+    width: 100%;
+}
+
+.donorID .form-group label{
+    width: 28%;
+    display: inline-block;
+    text-align: left;
+    font-size: 18px;
+    background-color: #dfdfdf;
+}
+
+.donorID .form-group input, option{
+    width: 60%;
+    border: 1px solid black;
+    padding: 8px 5px;
+    margin: 0;
+    text-align: left;
+    font-size: 18px;
+    border-radius: 2px;
+}
+
+.donordetails{
+    background-color: #dfdfdf;
+    width: 40%;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.donordetails .form-group{
+    padding: 1rem .5rem;
+    background-color: #dfdfdf;
+    width: 100%;
+}
+
+.donordetails .form-group label{
+    width: 28%;
+    text-align: left;
+    font-size: 18px;
+    display: inline-block;
+    background-color: #dfdfdf;
+}
+
+.donordetails .form-group select, .form-group-input, option{
+    width: 60%;
+    border: 1px solid black;
+    padding: 8px 5px;
+    margin: 0;
+    text-align: left;
+    font-size: 18px;
+    border-radius: 2px;
+}
+
+.donordetails .submit{
+    border: 1px solid black;
+    padding: 6px 40px;
+    border-radius: 5px;
+    background-color: black;
+    color: #fff;
+    font-size: 18px;
+}
+
+
+
+
+
+
