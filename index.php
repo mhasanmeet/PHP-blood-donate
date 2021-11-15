@@ -31,7 +31,7 @@
                 <td><?php echo $row['phone']; ?></td>
                 <td>
                     <a href="edit-donor.php?id=<?php echo $row['pid']; ?>" class="tbody-update">Edit</a>
-                    <a href="delete-donor.php?id=<?php echo $row['pid']; ?>" class=tbody-delete>Delete</a>
+                    <a href="action/delete.php?id=<?php echo $row['pid']; ?>" class=tbody-delete>Delete</a>
                 </td>
             </tbody>
 

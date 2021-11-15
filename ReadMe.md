@@ -14,15 +14,17 @@
 * run the project
 
 ### Developing Lifecycle
-* Config
-* Index.php
-* edit-donor.php + update.php
-* add-donor.php + save.php
+* config
+* index.php
+* index.php ⟶ edit-donor.php ⟶ update.php
+* index.php ⟶ delete-donor.php ⟶ delete.php
+* edit-donor.php ⟶ update.php
+* add-donor.php ⟶ save.php
 * update-donor.php
-* 
+* delete-donor.php
 
 ### For database contact with the Author 
-<code>01682568271</code>
+📞 <code>01682568271</code>
 
 <p>Developed by Mahmudul Hasan | NU CSE ALL Batch</p>
 
