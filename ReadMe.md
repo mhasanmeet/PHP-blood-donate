@@ -2,7 +2,7 @@
 
 ![cover images](img.png)
 
-## In here we use 
+## In this project we use 
 * HTML
 * CSS
 * PHP
@@ -10,9 +10,10 @@
 
 ### How to use this project?
 * Install Laragon
+* put this project into laragon root folder
 * Create DB in MYSQL
 * Insert DB into MYSQL DB console
-* stop and start all laragon server
+* stop and start all laragon server for fetching new project
 * run the project
 
 ### Developing Lifecycle
