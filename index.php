@@ -4,7 +4,7 @@
         <h2>Donor List</h2> 
     </div>
     <?php
-        include 'config.php';
+        include 'action/config.php';
         $sql = "SELECT * FROM personinfo JOIN bloodgroup WHERE personinfo.groupid = bloodgroup.gid";
         $result = mysqli_query($conn, $sql) or die("Connection Erorr");
 
@@ -30,8 +30,8 @@
                 <td><?php echo $row['address']; ?></td>
                 <td><?php echo $row['phone']; ?></td>
                 <td>
-                    <a href="edit.php?id=<?php echo $row['pid']; ?>" class="tbody-update">Edit</a>
-                    <a href="delete.php?id=<?php echo $row['pid']; ?>" class=tbody-delete>Delete</a>
+                    <a href="edit-donor.php?id=<?php echo $row['pid']; ?>" class="tbody-update">Edit</a>
+                    <a href="delete-donor.php?id=<?php echo $row['pid']; ?>" class=tbody-delete>Delete</a>
                 </td>
             </tbody>
 
@@ -42,5 +42,5 @@
 
     <?php } ?>
 
-<?php include 'blade/footer.php'?>
+
     

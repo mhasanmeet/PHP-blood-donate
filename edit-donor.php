@@ -3,16 +3,25 @@
     <div class="subtitle">
         <h2>Edit Donor</h2> 
     </div>
-    <?php 
-        include 'config.php';
+    <?php
+
+        //Incluse Databse connection
+        include 'action/config.php';
+
+        //Get ID and assign in variable from Index
         $pid = $_GET['id'];
+
+        //Write SQL schema
         $sql = "SELECT * FROM personinfo WHERE pid = $pid";
+
+        //Write MYSQL Query
         $result = mysqli_query($conn, $sql) or die("Connection Error:". mysqli_error());
 
+        //If There have any data in database then show the table with result otherwise not
         if(mysqli_num_rows($result)>0){
             while($row = mysqli_fetch_assoc($result)){
     ?>
-    <form class="add-donor" action="" method="">
+    <form class="add-donor" action="action/update.php" method="post">
         <div class="form-group">
             <label>Name</label>
             <input type="hidden" name="pid" value="<?php echo $row['pid']; ?>">
@@ -45,11 +54,11 @@
         </div>
         <div class="form-group">
             <label>Address</label>
-            <input type="text" name="" placeholder="Address">
+            <input type="text" name="address" placeholder="Address" value="<?php echo $row['address']; ?>">
         </div>
         <div class="form-group">
             <label>Phone Number</label>
-            <input type="" name="" placeholder="Phone Number">
+            <input type="text" name="phone" value="<?php echo $row['phone']; ?>" placeholder="Phone Number">
         </div>
         <input type="submit" class=submit value="Save">
     </form>
@@ -59,4 +68,3 @@
         }
     ?>
 
-<?php include 'blade/footer.php'?>
